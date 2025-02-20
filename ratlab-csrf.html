@@ -9,7 +9,10 @@
 </form>
 </body>
 <script>
-alert(document.forms[0].action);
-document.forms[0].submit();
+form1 = document.forms[0]
+form1.elements['from_account'].value = "foo";
+form1.elements['to_account'].value = "bar";
+form1.elements['amount'].value = 1;
+form1.submit();
 </script>
 </html>
